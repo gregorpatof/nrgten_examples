@@ -1,6 +1,6 @@
 try:
 	from nrgten.encom import ENCoM
-except ImportError e:
+except ImportError as e:
 	print("NRGTEN is not installed on your machine. To install, run the following command:\npip install nrgten")
 	raise e
 	
