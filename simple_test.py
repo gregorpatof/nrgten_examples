@@ -6,7 +6,7 @@ except ImportError as e:
 	
 if __name__ == "__main__":
 	model = ENCoM("test_medium.pdb")
-	diff = abs(504.8449418766389 - model.compute_vib_entropy())
+	diff = abs(504.8468148072965 - model.compute_vib_entropy())
 	if diff < 0.00001:
 		print("NRGTEN is properly installed on your system!")
 	else:
