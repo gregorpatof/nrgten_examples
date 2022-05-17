@@ -9,7 +9,7 @@ if __name__ == "__main__":
 	svib = model.compute_vib_entropy()
 	expected = 504.8468148072965
 	diff = abs(expected - svib)
-	if diff < 0.00001:
+	if diff < 0.01:
 		print("NRGTEN is properly installed on your system!")
 	else:
 		raise ValueError("NRGTEN seems installed on your system, but does not give the proper value for this test. The"+
